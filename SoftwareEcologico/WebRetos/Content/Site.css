@@ -1,0 +1,115 @@
+﻿.red {
+    color: #ff0000;
+}
+body {
+    background-color: #EAF6CB !important;
+    font-family: 'Mulish', sans-serif;
+    color: #232A32;
+}
+
+.navbar {
+    background-color: #5D7915;
+    border-bottom: 2px solid #5D7915;
+}
+.nav-item:hover {
+    color: white !important;
+    border-bottom: 3px solid white;
+}
+.navbar-brand:hover {
+    color: white !important;
+    border-bottom: 3px solid white;
+}
+.nav-item {
+    border-bottom: 3px solid transparent;
+    color: white !important;
+    font-size:18px;
+}
+.navbar-brand {
+    border-bottom: 3px solid transparent;
+    color: white !important;
+    font-size: 30px;
+}
+th {
+    font-size: 15px;
+    color: #5D7915 !important;
+}
+.color-green {
+    color: #5D7915 !important;
+}
+.btn-green {
+    border: 1px solid #5D7915 !important;
+    color: white !important;
+    padding: 5px 10px !important;
+    border-radius: 0;
+    background-color: #5D7915;
+}
+.btn-green:hover {
+    border: 1px solid #5D7915 !important;
+    background-color:white;
+    color: #5D7915 !important;
+    padding: 5px 10px !important;
+    border-radius:0;
+}
+.btn-simples {
+    border: 1px solid #5D7915 !important;
+    background-color: white;
+    color: #5D7915 !important;
+    padding: 5px 10px !important;
+    border-radius: 0;
+}
+    .btn-simples:hover {
+        border: 1px solid #5D7915 !important;
+        color: white !important;
+        padding: 5px 10px !important;
+        border-radius: 0;
+        background-color: #5D7915;
+    }
+.btn-red {
+    border: 1px solid #CC2B28 !important;
+    background-color: white;
+    color: #CC2B28 !important;
+    padding: 5px 10px !important;
+    border-radius: 0;
+}
+    .btn-red:hover {
+        border: 1px solid #CC2B28 !important;
+        background-color: #CC2B28;
+        color: white !important;
+    }
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-bottom: 1px solid #5D7915;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #5D7915;
+}
+.first-line {
+    background-color: #5D7915;
+}
+.text-white{
+    color:white !important;
+}
+h2{
+    font-weight:bold;
+}
+
+.jumbotron{
+    background-color:white;
+}
+
+.mr-3{
+    margin-right:2rem;
+}
+.mb-3{
+    margin-bottom:2rem;
+}
+.fz-16{
+    font-size: 16px;
+}
+.normal-text {
+    font-family: 'Economica', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pl-15{
+    padding-left:15px;
+}

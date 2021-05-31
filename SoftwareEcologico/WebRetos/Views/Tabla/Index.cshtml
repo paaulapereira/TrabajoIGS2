@@ -1,0 +1,45 @@
+﻿@model List<WebRetos.Models.ViewModels.ListaTablaViewModel>
+@{
+    ViewBag.Title = "Retos Pendientes";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row" style="padding: 5px;">
+    <div class="col-md-6">
+        <h2 class="color-green">Retos Pendientes</h2>
+    </div>
+    <div class="col-md-6 text-right">
+        <a href="~/Tabla/Nuevo" class="btn btn-green" style="margin-top:20px;margin-bottom:10px; ">Nuevo Reto</a>
+    </div>
+    <p  class="normal-text pl-15">Ese listado tiene como objetivo ayudarte para que puedas ayudar al medio ambiente!</p>
+    <p class="mb-3 normal-text pl-15">Una vez que este concluido el reto, puedes eliminarlo. También es posible editar los retos y crear tu proprio reto!</p>
+   
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            
+            <tr class="first-line">
+                <th class="text-white">#</th>
+                <th class="text-white">Nombre</th>
+                <th colspan="2" class="text-white">Descripción</th>
+            </tr>
+            @foreach (var oElemento in Model)
+            {
+        <tr>
+            <td>@oElemento.Id</td>
+            <td>@oElemento.Nombre</td>
+            <td>@oElemento.Descripcion</td>
+            <td>
+                <a class="btn btn-simples mr-3" href="~/Tabla/Editar/@oElemento.Id">Editar</a>
+                <a class="btn btn-red" href="~/Tabla/Eliminar/@oElemento.Id">Eliminar</a>
+            </td>
+        </tr>
+
+            }
+        </table>
+    </div>
+
+</div>

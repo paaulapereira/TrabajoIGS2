@@ -1,0 +1,37 @@
+﻿@model WebRetos.Models.ViewModels.TablaViewModel
+@{
+    ViewBag.Title = "Nuevo";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h2 class="color-green">Editar el Reto</h2>
+<p class="mb-3 normal-text">Tienes alguna cosa para cambiar en el reto? Edita aqui tus proprios retos!</p>
+@using (Html.BeginForm("Editar", "Tabla", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-12">
+            @Html.HiddenFor(d => d.Id)
+            <div class="mb-3">
+                @Html.LabelFor(d => d.Nombre, new { @class = "fz-16" })
+                @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Nombre, null, new { @class = "red" })
+            </div>
+            <div class="mb-3">
+                @Html.LabelFor(d => d.Descripcion, new { @class = "fz-16" })
+                @Html.TextBoxFor(d => d.Descripcion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Descripcion, null, new { @class = "red" })
+            </div>
+            <div>
+                @Html.LabelFor(d => d.Fecha_Creacion, new { @class = "fz-16" })<br />
+                @Html.EditorFor(d => d.Fecha_Creacion, "", new { @class = "form-control" })
+                @Html.ValidationMessageFor(d => d.Fecha_Creacion, null, new { @class = "red" })
+            </div>
+            <br />
+            <div style="text-align:right;">
+                <input value="Guardar" class="btn btn-green" type="submit" />
+            </div>
+        </div>
+
+    </div>
+}
